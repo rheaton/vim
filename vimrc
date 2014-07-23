@@ -41,6 +41,7 @@ filetype plugin indent on
 set background=light
 "# colorscheme solarized
 set shell=sh
+set laststatus=2
 
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
