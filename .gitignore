@@ -1,2 +1,4 @@
 bundle/
 backups/
+.DS_Store
+.netrwhist

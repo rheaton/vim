@@ -31,22 +31,29 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'groenewege/vim-less'
 Bundle 'slim-template/vim-slim'
 Bundle 'ervandew/supertab'
+Bundle 'thoughtbot/vim-rspec'
+Bundle 'tpope/vim-surround'
 
 call vundle#end()
 
 
 filetype plugin indent on
 set background=light
-colorscheme solarized
+"# colorscheme solarized
+set shell=sh
 
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
+set hlsearch                    "highlights search hits
+set showmatch
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
+set mouse=a
+set ttymouse=xterm2
 
 " Powerline
 set guifont=Inconsolata\ for\ Powerline:h18
@@ -64,6 +71,7 @@ set termencoding=utf-8
 set hidden
 
 syntax enable
+set paste
 
 " Turn Off Swap Files
 set noswapfile
@@ -104,3 +112,9 @@ endif
 
 " autosave when focus is lost
 :au FocusLost * silent! wa
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+let g:rspec_command = "!zeus rspec {spec}"
