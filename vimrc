@@ -31,6 +31,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'groenewege/vim-less'
 Bundle 'slim-template/vim-slim'
 Bundle 'ervandew/supertab'
+Bundle 'elixir-lang/vim-elixir'
 
 call vundle#end()
 
