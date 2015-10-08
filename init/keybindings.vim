@@ -14,6 +14,7 @@ vmap <leader>s :s/
 
 " Split screen
 map <leader>v :vsp<CR>
+map <leader>h :sp<CR>
 
 " Directory browsing
 map <leader>b :bnext<CR>

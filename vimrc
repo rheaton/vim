@@ -32,6 +32,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'slim-template/vim-slim'
 Bundle 'ervandew/supertab'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'StanAngeloff/php.vim'
 
 call vundle#end()
 
@@ -105,3 +106,5 @@ endif
 
 " autosave when focus is lost
 :au FocusLost * silent! wa
+
+let NERDTreeShowHidden=1
