@@ -87,6 +87,7 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
+set colorcolumn=80
 
 filetype plugin on
 filetype indent on
